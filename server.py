@@ -1519,11 +1519,24 @@ async def main():
 
 async def _run_sse(host: str, port: int, init_options):
     """Run the MCP server with SSE transport via Starlette/uvicorn."""
+    import socket
+
     import uvicorn
     from mcp.server.sse import SseServerTransport
     from starlette.applications import Starlette
     from starlette.responses import Response
     from starlette.routing import Mount, Route
+
+    # Fail fast if the port is already in use instead of silently starting
+    # an unreachable server while a stale process holds the port.
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        sock.bind((host, port))
+    except OSError as exc:
+        logger.error(f"Port {port} on {host} is already in use: {exc}")
+        raise SystemExit(1) from exc
+    finally:
+        sock.close()
 
     sse = SseServerTransport("/messages/")
 
