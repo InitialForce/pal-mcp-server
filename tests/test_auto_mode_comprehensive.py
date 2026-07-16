@@ -81,8 +81,8 @@ class TestAutoModeComprehensive:
                 },
                 {
                     "EXTENDED_REASONING": "gemini-3.1-pro-preview",  # Gemini 3.1 Pro Preview for deep thinking
-                    "FAST_RESPONSE": "gemini-2.5-flash",  # Flash for speed
-                    "BALANCED": "gemini-2.5-flash",  # Flash as balanced
+                    "FAST_RESPONSE": "gemini-3.5-flash",  # Flash for speed
+                    "BALANCED": "gemini-3.5-flash",  # Flash as balanced
                 },
             ),
             # Only OpenAI API available
@@ -94,9 +94,9 @@ class TestAutoModeComprehensive:
                     "OPENROUTER_API_KEY": None,
                 },
                 {
-                    "EXTENDED_REASONING": "gpt-5.4-pro",  # GPT-5.4 Pro prioritized for max reasoning
-                    "FAST_RESPONSE": "gpt-5.4",  # Prefer gpt-5.4 for speed (most token-efficient)
-                    "BALANCED": "gpt-5.4",  # Prefer gpt-5.4 for balanced
+                    "EXTENDED_REASONING": "gpt-5.6-sol",  # GPT-5.6 Sol prioritized for max reasoning
+                    "FAST_RESPONSE": "gpt-5.6-luna",  # Prefer gpt-5.6-luna for speed at lowest cost
+                    "BALANCED": "gpt-5.6-terra",  # Prefer gpt-5.6-terra for balanced
                 },
             ),
             # Only X.AI API available
@@ -123,8 +123,8 @@ class TestAutoModeComprehensive:
                 },
                 {
                     "EXTENDED_REASONING": "gemini-3.1-pro-preview",  # Gemini 3.1 Pro Preview comes first in priority
-                    "FAST_RESPONSE": "gemini-2.5-flash",  # Prefer flash for speed
-                    "BALANCED": "gemini-2.5-flash",  # Prefer flash for balanced
+                    "FAST_RESPONSE": "gemini-3.5-flash",  # Prefer flash for speed
+                    "BALANCED": "gemini-3.5-flash",  # Prefer flash for balanced
                 },
             ),
             # All native APIs available - Google still comes first
@@ -137,8 +137,8 @@ class TestAutoModeComprehensive:
                 },
                 {
                     "EXTENDED_REASONING": "gemini-3.1-pro-preview",  # Gemini 3.1 Pro Preview comes first in priority
-                    "FAST_RESPONSE": "gemini-2.5-flash",  # Prefer flash for speed
-                    "BALANCED": "gemini-2.5-flash",  # Prefer flash for balanced
+                    "FAST_RESPONSE": "gemini-3.5-flash",  # Prefer flash for speed
+                    "BALANCED": "gemini-3.5-flash",  # Prefer flash for balanced
                 },
             ),
         ],
