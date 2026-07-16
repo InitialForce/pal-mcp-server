@@ -103,15 +103,18 @@
       "intelligence_score": 8
     },
     {
-      "model_name": "google/gemini-3-pro-preview",
+      "model_name": "google/gemini-3.1-pro-preview",
       "aliases": [
         "pro",
         "gemini-pro",
         "gemini",
         "gemini3",
+        "gemini3.1",
+        "gemini-3.1",
+        "gemini-3.1-pro",
         "pro-openrouter"
       ],
-      "context_window": 1048576,
+      "context_window": 2097152,
       "max_output_tokens": 65536,
       "supports_extended_thinking": true,
       "supports_json_mode": true,
@@ -119,8 +122,8 @@
       "supports_images": true,
       "max_image_size_mb": 20.0,
       "allow_code_generation": true,
-      "description": "Google's Gemini 3.0 Pro via OpenRouter with vision",
-      "intelligence_score": 18
+      "description": "Google's Gemini 3.1 Pro via OpenRouter - 2M context with vision and advanced reasoning",
+      "intelligence_score": 19
     },
     {
       "model_name": "google/gemini-2.5-pro",
