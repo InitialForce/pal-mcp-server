@@ -4,7 +4,7 @@ This file contains startup instructions that Claude should follow at the beginni
 
 ## PAL MCP Server Setup
 
-The PAL MCP server provides access to multiple AI models (GPT-5.2-Pro, Gemini-3-Pro, etc.) for multi-model consultation, consensus building, and advanced workflows.
+The PAL MCP server provides access to multiple AI models (GPT-5.6-Sol, Gemini-3.5-Flash, etc.) for multi-model consultation, consensus building, and advanced workflows.
 
 ### Check PAL MCP Availability
 
@@ -43,7 +43,7 @@ If automatic setup fails, add this to Claude Code's MCP configuration:
 ### PAL MCP Tools Available
 
 Once connected, these tools become available:
-- `mcp__pal__chat` - Chat with any AI model (GPT-5.2-Pro, Gemini-3-Pro, etc.)
+- `mcp__pal__chat` - Chat with any AI model (GPT-5.6-Sol, Gemini-3.5-Flash, etc.)
 - `mcp__pal__consensus` - Get consensus from multiple models
 - `mcp__pal__codereview` - Multi-model code review
 - `mcp__pal__debug` - Systematic debugging with AI assistance
@@ -55,7 +55,7 @@ Once connected, these tools become available:
 
 ### Consult Oracles Skill
 
-The `/consult-oracles` skill uses PAL MCP to consult GPT-5.2-Pro and Gemini-3-Pro in PARALLEL for unbiased expert analysis. Use it for:
+The `/consult-oracles` skill uses PAL MCP to consult GPT-5.6-Sol and Gemini-3.5-Flash in PARALLEL for unbiased expert analysis. Use it for:
 - Complex architectural decisions
 - Debugging difficult problems
 - Performance optimization strategies
