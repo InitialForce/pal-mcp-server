@@ -25,7 +25,9 @@ __author__ = "Fahad Gilani"
 # This should be a stable, high-performance model suitable for code analysis
 # Can be overridden by setting DEFAULT_MODEL environment variable
 # Special value "auto" means Claude should pick the best model for each task
-DEFAULT_MODEL = get_env("DEFAULT_MODEL", "auto") or "auto"
+# InitialForce policy (2026-07): gpt-5.6-sol is the default oracle; gpt-5.4-pro and older are
+# decommissioned (see conf/openai_models.json). Set DEFAULT_MODEL=auto to restore per-task selection.
+DEFAULT_MODEL = get_env("DEFAULT_MODEL", "gpt-5.6-sol") or "gpt-5.6-sol"
 
 # Auto mode detection - when DEFAULT_MODEL is "auto", Claude picks the model
 IS_AUTO_MODE = DEFAULT_MODEL.lower() == "auto"
