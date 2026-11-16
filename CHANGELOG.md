@@ -2,6 +2,71 @@
 
 <!-- version list -->
 
+## v9.9.0 (2026-11-16)
+
+### Bug Fixes
+
+- Keep mcp below 2.0.0
+  ([`2abf2fb`](https://github.com/InitialForce/pal-mcp-server/commit/2abf2fbf0daa974d8fea7c0bc86c7e607552d8de))
+
+- **concurrency**: Add asyncio.Lock to SimpleTool for SSE safety
+  ([`de82dd6`](https://github.com/InitialForce/pal-mcp-server/commit/de82dd6ecd0b72839b213b5c38d1358477f24227))
+
+- **concurrency**: Isolate per-session state for concurrent agent safety
+  ([`86ea859`](https://github.com/InitialForce/pal-mcp-server/commit/86ea85980808c47a50e217d50ce04e28db64f709))
+
+### Chores
+
+- Remove claude-mem <claude-mem-context> injection from CLAUDE.md
+  ([`579c38d`](https://github.com/InitialForce/pal-mcp-server/commit/579c38da99f7e3c1be8cf2c8881e990d888f7832))
+
+- Sync version to config.py [skip ci]
+  ([`7afc7c1`](https://github.com/InitialForce/pal-mcp-server/commit/7afc7c1cc96e23992c8f105f960132c657883bb1))
+
+### Code Style
+
+- Reformat test files with black 26.1.0
+  ([`e761926`](https://github.com/InitialForce/pal-mcp-server/commit/e7619266afa4431954879054481009ca79bc6ef5))
+
+### Continuous Integration
+
+- Pin third-party actions to commit SHAs
+  ([`a1fcaf4`](https://github.com/InitialForce/pal-mcp-server/commit/a1fcaf4ed03bd8feaa374733d110c7517be92bab))
+
+### Features
+
+- **models**: Add Gemini 3.1 Pro Preview support
+  ([`ffa6f58`](https://github.com/InitialForce/pal-mcp-server/commit/ffa6f586f339820af5a1a91e999f3dccc274e6e0))
+
+- **models**: Add Gemini 3.5 Flash and 3.1 Flash-Lite; drop deprecated 3.0 Preview
+  ([`e953659`](https://github.com/InitialForce/pal-mcp-server/commit/e953659520f23e50d999ab016216f13fd4323df2))
+
+- **models**: Add GPT-5.3-Codex, GPT-5.4, and GPT-5.4 Pro support
+  ([`4ab7c7d`](https://github.com/InitialForce/pal-mcp-server/commit/4ab7c7d513ca60023faa0a4214556379cb1eb5ef))
+
+- **models**: Add GPT-5.5 and GPT-5.5 Pro support
+  ([`cbfe73d`](https://github.com/InitialForce/pal-mcp-server/commit/cbfe73daa6e762d9d38b5008206344417d295b65))
+
+- **models**: Add GPT-5.6 Sol, Terra, and Luna support
+  ([`200b99c`](https://github.com/InitialForce/pal-mcp-server/commit/200b99c7f6e62f08b9a328c284c9ba9b1a871090))
+
+- **models**: Register Gemini 3.1 Pro (2M ctx) as the oracle model
+  ([`9665bd1`](https://github.com/InitialForce/pal-mcp-server/commit/9665bd17959565235ac1f922817ad25d951da915))
+
+- **transport**: Add SSE transport support
+  ([`8bc1759`](https://github.com/InitialForce/pal-mcp-server/commit/8bc17592b2bdfbc4854c0ae3cb9c908766ef2336))
+
+### Performance Improvements
+
+- **concurrency**: Replace SimpleTool/workflow lock with semaphore + to_thread
+  ([`0f5e431`](https://github.com/InitialForce/pal-mcp-server/commit/0f5e4311cb43e212a2943f79e3bc7f094d656cfe))
+
+### Testing
+
+- Expect gemini 3.1 in the openrouter alias test
+  ([`7f7a14b`](https://github.com/InitialForce/pal-mcp-server/commit/7f7a14b5ad18ae4e5590acf62bf9096be58ed8b8))
+
+
 ## v9.8.2 (2025-12-15)
 
 ### Bug Fixes
